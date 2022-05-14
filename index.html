@@ -6,12 +6,156 @@
             content="Launch page for Left Handed bakery local bakery near Greensburg Pennsylvania" />
         <meta name="keywords"
             content="cookies, cupcakes, cakes, pies, desserts, Greensburg Pennsylvania" />
-        <link href="css/style.css" type="text/css"
-            rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        
+        <script>
+            function openForm() {
+              document.getElementById("popupForm").style.display = "block";
+            }
+            function closeForm() {
+              document.getElementById("popupForm").style.display = "none";
+            }
+        </script>
+        <script src="quote.js"></script>
     </head>
     <body>
         <div class="page">
-            <h1>Left Handed Bakery's website is under maintenance.</h1>
+            <h1>Left Handed Bakery</h1>
+            <div class="container">
+                <img src="images/banner_lhb.jpg" alt="Banner">
+                <div class="quoteBtn">
+                <button class="btn" onclick="openForm()">Get Quote</button>
+                </div>
+                <div class="loginPopup">
+                    <div class="formPopup" id="popupForm">
+                    <form action="https://send.pageclip.co/bbcWWi3j5NlD63GVPXo2FDzm1DOfwbKu/getQuote" class="formContainer" method="post">
+                        <h3>Please enter your request and we will get back to you.</h3>
+                        <label for="name">
+                          <strong>Name</strong>
+                        </label>
+                        <input type="text" id="name" placeholder="Your Name" name="name" required>
+                        <label for="phone">
+                            <strong><br>Phone</strong>
+                          </label>
+                          <input type="text" id="phone" placeholder="Phone #" name="phone">
+                          <label for="email">
+                            <strong><br>E-mail</strong>
+                          </label>
+                          <input type="text" id="email" placeholder="Your Email" name="email">
+                            
+                        <label for="question">
+                          <strong><br>Question</strong>
+                        </label>
+                        <textarea id="question" rows="10" placeholder="Be sure to include a date!"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                      </form>
+                    </div>
+                  </div>
+                
+            </div>
+
+            <ul class="navigation">
+                <li><a href="#" class="on">Home</a></li>
+                <li><a href="pages/fullmenu.html">Full Menu</a></li>
+                <li><a href="pages/specials.html">Specials</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li class="social">
+                    <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                        <img src="images/facebook.png" alt="LHB Facebook Link"
+                        width="3.5%" height="3.5%">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lefthandedbakery/?hl=en">
+                        <img src="images/insta.png" alt="LHB Instagram Link"
+                        width="4%" height="4%">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="container2">
+                <img src="images/ju_4th.png" alt="Julia holds 4th of July Cookie Cake"
+                width="50%">
+                <img src="images/summer_party.png" alt="Julia holds 4th of July Cookie Cake"
+                width="50%">
+                <a href="pages/specials.html">
+                    <button class="btn2">Here!</button>
+                </a>
+            </div>
+
+            <div class="container3">
+                <ul class="navigation2">
+                    <li>
+                        <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                            <img src="images/cakes.png" alt="Link to Cakes">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                            <img src="images/cupcakes.png" alt="Link to Cupcakes">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                            <img src="images/cheesecakes.png" alt="Link to Cheesecakes">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                            <img src="images/pies.png" alt="Link to Pies">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                            <img src="images/cookies.png" alt="Link to Cookies">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/?ref=page_internal">
+                            <img src="images/additional.png" alt="Link to Additional">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="reviews">
+                <a href="https://www.facebook.com/Left-Handed-Bakery-105804971769223/reviews/?ref=page_internal"><h2>Click Here To Leave a Review</h2></a>
+                <h3>Christie wrote, <br>
+                    <i>"The cookies we have are fantastic. All the cut out cookies or designs are spectacular. Snowman, 
+                    Rudolph the red nose reindeer, snowflakes so many designs to choose from. And the lady locks were 
+                    very awesome. Highly recommend. No need to look elsewhere ask this person Julia to make your cookies 
+                    or any dessert she would like. You can tell they’re made with love and lots of hard work. Worth every 
+                    penny." <br></i></h3>
+                <h3>Mary Jo wrote, <br>
+                    <i>"Julia made a pinata cake for my granddaughter’s birthday. It was the most beautiful cake!  
+                    The decorating  was amazing and the cake was delicious!  My grandkids were thrilled with the flow of
+                     candy!  It was everything that I expected. I highly recommend the Left Handed Bakery."<br></i></h3>
+                <h3>Heather wrote, <br>
+                    <i>"My mom surprised me with a red velvet bacon cake! This cake was sooo good! A perfect combination of
+                     salty and sweet and it wasn’t overly sweet which was perfect! Thank you so much!"<br></i></h3>
+                <h3>Beth wrote, <br>
+                <i>"Super happy with the Christmas cookie tray I got everyone loved them and I had none left!"<br></i></h3>
+                <h3>Karen wrote, <br>
+                    <i>Everything I have tasted was excellent from cakes to pies to cookies. And her icing is phenomenal!!!<br></i></h3>
+                <h3>Melissa wrote, <br>
+                    <i>The Chocolate Chip Cookie Dough Cake, with the filling was AMAZING! Best cake, and it was 
+                        decorated exactly how I wanted it! thank you again♥</i></h3>
+            </div>
+            <div class="footer">
+                <h4>"Thank you for your support!"</h4>
+                <a href = "mailto: lefthandedbakery@gmail.com">lefthandedbakery@gmail</a>
+                <h4>Left Handed Bakery 2022&copy</h4>
+            </div>
+            
+
+
         </div>
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     </body>
 </html>
