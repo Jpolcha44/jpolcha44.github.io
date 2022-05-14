@@ -9,7 +9,7 @@ function main(){
                 "\nQuestion: " + questClient.value);
     console.log(info);
 
-    var form = document.querySelector('.pageclip-form')
+    var form = document.querySelector('.formContainer') //may need ID
     Pageclip.form(form, {
     onSubmit: function (event) { },
     onResponse: function (error, response) { },
