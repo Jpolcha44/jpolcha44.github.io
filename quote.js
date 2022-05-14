@@ -8,4 +8,11 @@ function main(){
     let info = ("Name: " + nameClient.value + "\nPhone: "+ numClient.value + "\nE-mail: " + emailClient.value +
                 "\nQuestion: " + questClient.value);
     console.log(info);
+
+    var form = document.querySelector('.pageclip-form')
+    Pageclip.form(form, {
+    onSubmit: function (event) { },
+    onResponse: function (error, response) { },
+    successTemplate: '<span>Thank you!</span>'
+})
 }
