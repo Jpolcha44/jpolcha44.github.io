@@ -199,13 +199,18 @@ a:hover {
   
   .formContainer {
     width: 30em;
-    height: 45em;
+    height: 34em;
     padding: 1em;
     background-color: #fff;
+    border-style: double;
+    border-color: pink;
   }
   .formContainer input[type=text] {
       width: 20em;
       margin: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 1px #999;   
   }
   .formContainer textarea{
     padding: 10px;
@@ -213,13 +218,25 @@ a:hover {
     line-height: 1.5;
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;    
+    box-shadow: 1px 1px 1px #999;
+    resize: none;   
 }
   .formContainer input[type=text]:focus,
   .formContainer input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
+
+.formContainer input[type=submit]{
+    margin-top: 2em;
+    margin-left: 75%;
+    padding: 1em;
+
+    border: 1px outset pink;
+    color: rgb(173, 32, 55);
+    background-color: antiquewhite;
+}
+
   .formContainer .btn {
     padding: 12px 20px;
     border: none;
