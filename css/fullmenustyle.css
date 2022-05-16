@@ -104,6 +104,9 @@ a:hover {
 
 /* form */
 
+* {
+    box-sizing: border-box;
+  }
 
 .formPopup {
     display: none;

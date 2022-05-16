@@ -92,6 +92,10 @@ p {
 
 /* form */
 
+* {
+    box-sizing: border-box;
+  }
+
 .formPopup {
     display: none;
     position: fixed;
