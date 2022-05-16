@@ -28,6 +28,7 @@
                 <div class="loginPopup">
                     <div class="formPopup" id="popupForm">
                         <form name="formContainer" id="formContainer" class="formContainer" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScVRuDjccKNpg5N3mvT7jHjFNWgTeW3MT761vkD8LZZjFIMFA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                            <input type="button" class="cancel" value="X" onclick="closeForm()">
                             Name:<br>
                             <input type="text" name="entry.392546464" id="entry.392546464" required><br>
                             Email Address:<br>
@@ -37,6 +38,7 @@
                             Question:<br>
                             <textArea name="entry.1678599690" id="entry.1678599690" placeholder="Be sure to include a date!" rows="8"></textArea><br>
                             <input type="submit" value="Submit">
+                            
                         </form>
                 
                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}; closeForm()"></iframe>

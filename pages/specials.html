@@ -8,14 +8,44 @@
             content="cookies, cupcakes, cakes, pies, additional desserts, specials menu" />
         <link href="../css/specialsstyle.css" type="text/css"
             rel="stylesheet" />
-        <!--<script src="quote.js"></script>-->
+
+        <script>
+            function openForm() {
+                document.getElementById("popupForm").style.display = "block";
+            }
+            function closeForm() {
+                document.getElementById("popupForm").style.display = "none";
+            }
+        </script>
     </head>
     <body>
         <div class="page">
             <h1>Specials</h1>
             <div class="container">
                 <img src="../images/banner_lhb.jpg" alt="Banner">
-                <button class="btn">Get Quote</button>
+                <div class="quoteBtn">
+                <button class="btn" onclick="openForm()">Get Quote</button>
+                </div>
+                <div class="loginPopup">
+                    <div class="formPopup" id="popupForm">
+                        <form name="formContainer" id="formContainer" class="formContainer" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScVRuDjccKNpg5N3mvT7jHjFNWgTeW3MT761vkD8LZZjFIMFA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                            <input type="button" class="cancel" value="X" onclick="closeForm()">
+                            Name:<br>
+                            <input type="text" name="entry.392546464" id="entry.392546464" required><br>
+                            Email Address:<br>
+                            <input type="text" name="entry.1355193991" id="entry.1355193991"><br>
+                            Phone:<br>
+                            <input type="text" name="entry.76595505" id="entry.76595505"><br>
+                            Question:<br>
+                            <textArea name="entry.1678599690" id="entry.1678599690" placeholder="Be sure to include a date!" rows="8"></textArea><br>
+                            <input type="submit" value="Submit">
+                            
+                        </form>
+                
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}; closeForm()"></iframe>
+                    </div>
+                    </div>
+                
             </div>
 
             <ul class="navigation">

@@ -236,7 +236,17 @@ a:hover {
     color: rgb(173, 32, 55);
     background-color: antiquewhite;
 }
+  .formContainer .cancel {
 
+    margin-left: 95%;
+    padding: 0.5em;
+
+    border: 1px outset pink;
+    color: rgb(173, 32, 55);
+    background-color: antiquewhite;
+  }
+
+  /*
   .formContainer .btn {
     padding: 12px 20px;
     border: none;
@@ -248,11 +258,8 @@ a:hover {
     margin-bottom: 15px;
     opacity: 0.8;
   }
-  .formContainer .cancel {
-    margin-top: 8em;
-    background-color: #cc0000;
-  }
   .formContainer .btn:hover,
   .openButton:hover {
     opacity: 1;
   }
+*/
